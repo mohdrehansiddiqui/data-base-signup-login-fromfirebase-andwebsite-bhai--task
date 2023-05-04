@@ -7,7 +7,7 @@ const sign_up_btn2 = document.querySelector("#sign-up-btn2");
 
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
-import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword  } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js";
+import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword,FacebookAuthProvider, signInWithPopup  } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js";
 import { getDatabase, set,ref } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
 const firebaseConfig = {
   apiKey: "AIzaSyByr7hbKqFg0Zl0TylGfojU1LLg3hKymPM",
@@ -81,4 +81,39 @@ sign_in_submit.addEventListener('click',()=>{
     console.log(errorCode,errorMessage)
   });
 
+})
+
+const Fblogin = document.getElementById('fg-login')
+
+Fblogin.addEventListener('click',()=>{
+  const provider = new FacebookAuthProvider();
+  provider.addScope('user_birthday');
+  provider.setCustomParameters({
+    'display': 'popup'
+  });
+  
+  signInWithPopup(auth, provider)
+  .then((result) => {
+    // The signed-in user info.
+    const user = result.user;
+
+    // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+    const credential = FacebookAuthProvider.credentialFromResult(result);
+    const accessToken = credential.accessToken;
+    console.log(user,accessToken)
+
+    // IdP data available using getAdditionalUserInfo(result)
+    // ...
+  })
+  .catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The email of the user's account used.
+    const email = error.customData.email;
+    // The AuthCredential type that was used.
+    const credential = FacebookAuthProvider.credentialFromError(error);
+    console.log(errorCode,errorMessage,email,credential)
+    // ...
+  });
 })
