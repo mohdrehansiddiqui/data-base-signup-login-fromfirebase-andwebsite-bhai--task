@@ -1,12 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style2.css">
+  <title>Document</title>
 </head>
 <body>
-    <h1>Hello Brother</h1>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./rehanTaskSrc-images/logo.png" alt="" srcset="">
+      </a>
+      <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-3" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-3" href="#">Pages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-3" href="#">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-3" href="#">Account</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-3" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-icons">
+        <i class="fa-sharp fa-solid fa-magnifying-glass navi"></i>
+        <i class="fa-solid fa-cart-shopping navi"></i>
+        <i class="fa-solid fa-user navi"></i>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./rehanTaskSrc-images/slideshow1-1.jpg" class="d-block w-100" alt="error">
+      </div>
+      <div class="carousel-item">
+        <img src="./rehanTaskSrc-images/slideshow1-2.jpg" class="d-block w-100" alt="error">
+      </div>
+      <div class="carousel-item">
+        <img src="./rehanTaskSrc-images/slideshow1-3.jpg" class="d-block w-100" alt="error">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div><br><br>
+  <div class="Arrivals-heading">
+    <h1>New Arrivals</h1>
+    <p>The Best Online Sales To Shop This Weekend</p>
+  </div>
+  <div class="card-group products-without-title">
+    <div class="card">
+      <img src="./rehanTaskSrc-images/222 (1).jpg" class="card-img-top" alt="error">
+      <div class="sale">
+        <h5 class="sale-h1">sale</h5>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./rehanTaskSrc-images/444.jpg" class="card-img-top" alt="error">
+    </div>
+    <div class="card">
+      <img src="./rehanTaskSrc-images/222.jpg" class="card-img-top" alt="error">
+      <div class="sale">
+        <h5 class="sale-h1">sale</h5>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./rehanTaskSrc-images/444.jpg" class="card-img-top" alt="error">
+
+    </div>
+  </div><br><br><br><br><br><br><br><br><br>
+  <div class="card-group products-with-title">
+    <div class="card">
+      <img src="./rehanTaskSrc-images/222 (1).jpg" class="card-img-top" alt="error">
+      <div class="sale">
+        <h5 class="sale-h1">sale</h5>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Floral Kirby</h5>
+        <p class="card-text">$329.10</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./rehanTaskSrc-images/444.jpg" class="card-img-top" alt="error">
+      <div class="card-body">
+        <h5 class="card-title">Floral Kirby</h5>
+        <p class="card-text">$329.10</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./rehanTaskSrc-images/222.jpg" class="card-img-top" alt="error">
+      <div class="sale">
+        <h5 class="sale-h1">sale</h5>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Floral Kirby</h5>
+        <p class="card-text">$329.10</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./rehanTaskSrc-images/444.jpg" class="card-img-top" alt="error">
+      <div class="card-body">
+        <h5 class="card-title">Floral Kirby</h5>
+        <p class="card-text">$329.10</p>
+      </div>
+    </div>
+  </div>
+  <div class="card-group products-without-title">
+    <div class="card">
+      <img src="./rehanTaskSrc-images/222 (1).jpg" class="card-img-top" alt="error">
+      <div class="sale">
+        <h5 class="sale-h1">sale</h5>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./rehanTaskSrc-images/444.jpg" class="card-img-top" alt="error">
+    </div>
+    <div class="card">
+      <img src="./rehanTaskSrc-images/222.jpg" class="card-img-top" alt="error">
+      <div class="sale">
+        <h5 class="sale-h1">sale</h5>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./rehanTaskSrc-images/444.jpg" class="card-img-top" alt="error">
+    </div>
+  </div><br>
+
+  <div class="grid-container list-girl">
+    <div class="grid-item">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4 img-left">
+            <img src="./rehanTaskSrc-images/adsv.jpg" class="img-fluid rounded-start left-side-img" alt="error">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="grid-item best-seller-list">
+      <div class="col-md-8 ms-5 rigt-cntent-list">
+        <div class="card-body">
+          <div class="card mb-3 card-list">
+            <h5 class="card-title" align="left">Best Sellers</h5>
+            <hr class="hr-width">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start" alt="error">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
+                  <p class="card-text card-text2">$42.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start" alt="error">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
+                  <p class="card-text card-text2">$42.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start" alt="error">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
+                  <p class="card-text card-text2">$42.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start" alt="error">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
+                  <p class="card-text card-text2">$42.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-item newarrival-list">
+      <div class="col-md-8 ms-5">
+        <div class="card-body">
+          <div class="card mb-3 card-list2">
+            <h5 class="card-title" align="left">New Arrivals</h5>
+            <hr class="hr-width">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start" alt="error">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
+                  <p class="card-text card-text2">$42.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start" alt="error">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
+                  <p class="card-text card-text2">$42.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start" alt="error">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
+                  <p class="card-text card-text2">$42.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start" alt="error">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
+                  <p class="card-text card-text2">$42.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+  <div class="container text-center col-1">
+    <div class="row">
+      <div class="col">
+        <button type="button" class="btn">
+          <i class="fa-sharp fa-solid fa-person-biking fa-xl"></i>
+        </button>
+        <button type="button" class="btn space-col1">
+          <h1 class="h1-freeship" align="left">Free Shipping</h1>
+          <p class="p-freeship">on all order over $39.00</p>
+        </button>
+      </div>
+      <div class="col">
+        <button type="button" class="btn">
+          <i class="fa-solid fa-wallet fa-xl"></i>
+        </button>
+        <button type="button" class="btn space-col1">
+          <h1 class="h1-freeship" align="left">30 Days Return</h1>
+          <p class="p-freeship">Money Back Guarantee</p>
+        </button>
+      </div>
+      <div class="col">
+        <button type="button" class="btn">
+          <i class="fa-solid fa-key fa-rotate-180 fa-xl"></i>
+        </button>
+        <button type="button" class="btn space-col1">
+          <h1 class="h1-freeship" align="left">Secure Checkout</h1>
+          <p class="p-freeship">100% protected by paypal</p>
+        </button>
+      </div>
+      <div class="col">
+        <button type="button" class="btn">
+          <i class="fa-solid fa-clock fa-lg twenty4"></i>
+        </button>
+        <button type="button" class="btn space-col1">
+          <h1 class="h1-freeship twenty4" align="left">24/7 Support</h1>
+          <p class="p-freeship pfreeship3">All Time Customer Support</p>
+        </button>
+      </div>
+    </div>
+  </div><br>
+  <!-- Remove the container if you want to extend the Footer to full width. -->
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-black" style="background-color: #f7f7f7"><br><br>
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <img src="./rehanTaskSrc-images/logo.png" alt=""><br><br>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestiae modi cum ipsam ad, illo possimus laborum ut <br><br>
+              reiciendis obcaecati. Ducimus, quas. Corrupti, pariatur eaque?
+              Reiciendis assumenda iusto sapiente inventore animi?
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Category</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-black">Mens Fashion</a>
+              </li>
+              <li>
+                <a href="#!" class="text-black">Womens Fashion</a>
+              </li>
+              <li>
+                <a href="#!" class="text-black">Kids Fashion</a>
+              </li>
+              <li>
+                <a href="#!" class="text-black">Acessories</a>
+              </li>
+              <li>
+                <a href="#!" class="text-black">Shoes Collection</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Useful Link</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-black">News & Tips</a>
+              </li>
+              <li>
+                <a href="#!" class="text-black">About Us</a>
+              </li>
+              <li>
+                <a href="#!" class="text-black">Support</a>
+              </li>
+              <li>
+                <a href="#!" class="text-black">Our Shop</a>
+              </li>
+              <li>
+                <a href="#!" class="text-black">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Opening Hours</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-black">Monday-Friday</a>
+              </li>
+              <li>
+                <a href="#!" class="text-black">Saturday</a>
+              </li>
+              <li>
+                <a href="#!" class="text-black">Sunday</a>
+              </li>
+            </ul><br>
+            <h6 class="calling">Call-No : <span class="call-now">+923442347013</span></h6>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <br><br>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-black">8.00-2.00</a>
+              </li>
+              <li>
+                <a href="#!" class="text-black">10.00-2.00</a>
+              </li>
+              <li>
+                <a href="#!" class="text-black">12-2.00</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div><br><br><br><br><br>
+    <div class="btn-group footer-btns" role="group" aria-label="Basic example">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn ">
+              <div class="text-left p-3 copyrght">
+                © 2020 Copyright Made By <i class="rehan">Rehan</i></div>
+            </button>
+
+            <button type="button" class="btn footer-a-btn">
+              <a class="text-black footer-a-left" href="https://mdbootstrap.com/" ">Privacy Policy</a>
+           <a class=" text-black footer-a-left" href="https://mdbootstrap.com/" ">Terms And Conditions</a>
+           <a class=" text-black footer-a-left" href="https://mdbootstrap.com/" ">Cookie Policy</a>
+           <a class=" text-black footer-a-left" href="https://mdbootstrap.com/" ">Terms Of Sale</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+    <script src=" ./bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

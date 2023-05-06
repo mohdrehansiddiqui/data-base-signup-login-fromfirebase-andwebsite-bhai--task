@@ -1,0 +1,271 @@
+@font-face {
+  font-family: "Catamaran";
+  src: url("./fonts/Catamaran-VariableFont_wght.ttf");
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Catamaran", sans-pro;
+}
+.navi {
+  margin: 10px;
+}
+.navbar-brand,
+.navbar-collapse,
+nav-icons {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-icons {
+  margin-right: 150px;
+}
+.navbar-brand {
+  margin-left: 140px;
+}
+.sale .sale-h1 {
+  background-color: orangered;
+  display: flex;
+  width: 17%;
+  padding: 10px;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+.card {
+  display: flex;
+}
+.sale-h1 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1em;
+  color: white;
+}
+.sale {
+  justify-content: flex-end;
+}
+.card {
+  width: 50% !important;
+  max-width: 600px;
+  outline: none;
+  border: none;
+  margin: 35px;
+}
+.card-body {
+  text-align: center;
+}
+.card-title {
+  font-weight: 600;
+}
+.col-md-4 {
+  width: 80px;
+}
+.inlineelist-product {
+  display: inline-block;
+}
+.card-list {
+  width: 320px !important;
+  position: relative;
+  right: -170px;
+}
+.card-list2 {
+  width: 320px !important;
+  position: relative;
+  right: -40px;
+}
+.card-title-2,
+.card-text2 {
+  display: flex;
+}
+.left-side-img {
+  max-width: 600px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.hr-width {
+  width: 20%;
+  border: 2.3px solid orangered;
+}
+.card-text2 {
+  font-size: 1rem;
+  margin-left: 60px;
+}
+.Arrivals-heading h1 {
+  font-weight: 600;
+}
+.Arrivals-heading {
+  text-align: center;
+}
+.h1-freeship {
+  font-size: 1.4em;
+}
+.p-freeship {
+  line-height: 0;
+}
+
+.space-col1 {
+  margin-left: -10px;
+}
+.col-1 {
+  width: 100%;
+}
+.col-1 i {
+  color: rgba(255, 68, 0, 0.486);
+}
+.footer-a-left {
+  margin-left: 10px;
+}
+.footer-btns {
+  width: 100%;
+  background-color: white;
+}
+.copyrght {
+  color: rgb(0, 0, 0);
+}
+.rehan {
+  color: rgba(255, 68, 0, 0.733) !important;
+  font-style: normal !important;
+}
+.footer-a-btn a {
+  text-decoration: none;
+}
+.call-now {
+  font-size: 0.9rem;
+}
+footer li a {
+  line-height: 50px;
+  text-decoration: none;
+}
+.calling {
+  font-weight: 600;
+}
+@media screen and (max-width: 1000px) and (min-width: 730px) {
+  .newarrival-list {
+    display: none;
+  }
+  .col-1 h1 {
+    font-size: large;
+  }
+  .col-1 p {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) and (min-width: 320px) {
+  .products-without-title {
+    margin-left: 100px;
+  }
+  .products-with-title {
+    margin-left: 100px;
+  }
+  .navbar-nav {
+    display: none;
+  }
+  .nav-icons {
+    display: none;
+  }
+  .navbar-brand {
+    margin-left: 5px;
+  }
+
+  .newarrival-list {
+    display: none;
+  }
+  .best-seller-list {
+    display: none;
+  }
+
+  .list-girl {
+    margin-left: -90px;
+  }
+  .col-1 h1 {
+    font-size: large;
+    text-align: center;
+  }
+  .twenty4 {
+    display: none;
+  }
+  .h1-freeship {
+    margin-left: 10px;
+  }
+  .col-1 p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 414) and (min-width: 134px) {
+  .products-without-title {
+    margin-left: 100px;
+  }
+  .products-with-title {
+    margin-left: 100px;
+  }
+  .navbar-nav {
+    display: none;
+  }
+  .nav-icons {
+    display: none;
+  }
+  .navbar-brand {
+    margin-left: 5px;
+  }
+
+  .newarrival-list {
+    display: none;
+  }
+  .best-seller-list {
+    display: none;
+  }
+
+  .col-1 h1 {
+    font-size: large;
+    text-align: center;
+  }
+  .twenty4 {
+    display: none;
+  }
+  .h1-freeship {
+    margin-left: 10px;
+  }
+  .col-1 p {
+    display: none;
+  }
+  .list-girl {
+    width: 20vw;
+  }
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    margin: 40px !important;
+  }
+}
+
+@media (max-width: 821), (min-width: 550px) {
+  .navbar-nav {
+    display: none;
+  }
+  .newarrival-list {
+    display: none;
+  }
+  .navbar-toggler {
+    position: absolute;
+    right: 10px;
+  }
+  .navbar-brand{
+    margin-left: 3px;
+  }
+  .nav-icons{
+    margin-right: 62px;
+  }
+}

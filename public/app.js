@@ -91,14 +91,14 @@ Fblogin.addEventListener('click',()=>{
   provider.setCustomParameters({
     'display': 'popup'
   });
-  
+  var myWindow = window;
   signInWithPopup(auth, provider)
   .then((result) => {
     const user = result.user;
     const credential = FacebookAuthProvider.credentialFromResult(result);
     const accessToken = credential.accessToken;
     console.log(user,accessToken)
-    window.location.href = 'welcome.html'
+    window.location.href = './welcome.html'
   })
   .catch((error) => {
     const errorCode = error.code;
