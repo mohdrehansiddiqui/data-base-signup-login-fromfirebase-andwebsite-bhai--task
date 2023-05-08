@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Catamaran";
   src: url("./fonts/Catamaran-VariableFont_wght.ttf");
-  }
+}
 
 * {
   margin: 0;
@@ -9,7 +9,7 @@
   box-sizing: border-box;
   font-family: "Catamaran", sans-pro;
 }
-.navi {
+.nav i {
   margin: 10px;
 }
 .navbar-brand,
@@ -19,10 +19,10 @@ nav-icons {
   justify-content: space-around;
 }
 .nav-icons {
-  margin-right: 150px;
+  padding-right: 60px;
 }
 .navbar-brand {
-  margin-left: 140px;
+  padding: 10px;
 }
 .sale .sale-h1 {
   background-color: orangered;
@@ -59,9 +59,7 @@ nav-icons {
 .card-title {
   font-weight: 600;
 }
-.col-md-4 {
-  width: 80px;
-}
+
 .inlineelist-product {
   display: inline-block;
 }
@@ -110,7 +108,7 @@ nav-icons {
   font-size: 1.4em;
 }
 .p-freeship {
-  line-height: 0;
+  line-height: 20px;
 }
 
 .space-col1 {
@@ -149,123 +147,102 @@ footer li a {
 .calling {
   font-weight: 600;
 }
-@media screen and (max-width: 1000px) and (min-width: 730px) {
-  .newarrival-list {
-    display: none;
-  }
-  .col-1 h1 {
-    font-size: large;
-  }
-  .col-1 p {
-    display: none;
-  }
+.best-seller-list {
+  margin-left: -240px;
 }
-@media screen and (max-width: 576px) and (min-width: 320px) {
-  .products-without-title {
-    margin-left: 100px;
-  }
-  .products-with-title {
-    margin-left: 100px;
-  }
-  .navbar-nav {
-    display: none;
-  }
-  .nav-icons {
-    display: none;
-  }
-  .navbar-brand {
-    margin-left: 5px;
-  }
+.navbar-toggler {
+  position: absolute;
+  right: 20px;
+}
 
-  .newarrival-list {
-    display: none;
+@media (max-width: 672px) {
+  .r-side-img {
+    width: 20% !important;
+    position: relative;
+    right: 40px;
   }
   .best-seller-list {
-    display: none;
+    position: relative;
+    right: 50px;
+    width: -240px;
   }
-
-  .list-girl {
-    margin-left: -90px;
-  }
-  .col-1 h1 {
-    font-size: large;
-    text-align: center;
-  }
-  .twenty4 {
-    display: none;
-  }
-  .h1-freeship {
-    margin-left: 10px;
-  }
-  .col-1 p {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 414) and (min-width: 134px) {
-  .products-without-title {
-    margin-left: 100px;
-  }
-  .products-with-title {
-    margin-left: 100px;
-  }
-  .navbar-nav {
-    display: none;
-  }
-  .nav-icons {
-    display: none;
-  }
-  .navbar-brand {
-    margin-left: 5px;
-  }
-
-  .newarrival-list {
-    display: none;
-  }
-  .best-seller-list {
-    display: none;
-  }
-
-  .col-1 h1 {
-    font-size: large;
-    text-align: center;
-  }
-  .twenty4 {
-    display: none;
-  }
-  .h1-freeship {
-    margin-left: 10px;
-  }
-  .col-1 p {
-    display: none;
-  }
-  .list-girl {
-    width: 20vw;
-  }
-  button,
-  input,
-  optgroup,
-  select,
-  textarea {
-    margin: 40px !important;
-  }
-}
-
-@media (max-width: 821), (min-width: 550px) {
-  .navbar-nav {
-    display: none;
+  .left-side-img {
+    position: relative;
+    left: 0px;
+    width: 170%;
   }
   .newarrival-list {
     display: none;
   }
   .navbar-toggler {
     position: absolute;
-    right: 10px;
+    right: 15px;
   }
-  .navbar-brand{
-    margin-left: 3px;
+}
+@media (max-width: 375px) {
+  .r-side-img {
+    width: 20% !important;
+    position: relative;
+    right: 40px;
   }
-  .nav-icons{
-    margin-right: 62px;
+  .best-seller-list {
+    display: none;
+  }
+  .left-side-img {
+    position: relative;
+    left: -5px;
+    width: 350px;
+  }
+  .newarrival-list {
+    display: none;
+  }
+  .products-without-title {
+    padding-left: 80px !important;
+  }
+  .products-with-title {
+    padding-left: 80px !important;
+  }
+  .navbar-toggler {
+    position: absolute;
+    right: 20px;
+  }
+  .col-1{
+    margin-left: -10px;
+    }
+}
+@media (max-width: 414px) {
+  .navbar-toggler {
+    position: absolute;
+    right: 20px;
+  }
+  .products-without-title {
+    padding-left: 80px !important;
+  }
+  .products-with-title {
+    padding-left: 80px !important;
+  }
+  .best-seller-list {
+    display: none;
+  }
+  .newarrival-list {
+    display: none;
+  }
+  .left-side-img{
+    width: 200%;
+    margin-left: -35px;
+  }
+  .col-1{
+  position: relative;
+  left: 29px;
+  }
+}
+@media (max-width: 390px) {
+.left-side-img{
+  width: 220%;
+  margin-left: -49px;
+}
+.col-1{
+  position: relative;
+  left: 12px;
   }
 }
