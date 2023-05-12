@@ -1,0 +1,24 @@
+{
+  "name": "bhai-task-new",
+  "version": "1.0.0",
+  "description": "Bhai website site with swiper with npm bootsrap",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohdrehansiddiqui/data-base-signup-login-fromfirebase-andwebsite-bhai--task.git"
+  },
+  "author": "Rehan Siddiqui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohdrehansiddiqui/data-base-signup-login-fromfirebase-andwebsite-bhai--task/issues"
+  },
+  "homepage": "https://github.com/mohdrehansiddiqui/data-base-signup-login-fromfirebase-andwebsite-bhai--task#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "sweetalert2": "^11.7.5",
+    "swiper": "^9.3.1"
+  }
+}

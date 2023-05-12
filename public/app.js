@@ -4,11 +4,10 @@ const container = document.querySelector(".container");
 const sign_in_btn2 = document.querySelector("#sign-in-btn2");
 const sign_up_btn2 = document.querySelector("#sign-up-btn2");
 
-
-
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
 import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword,FacebookAuthProvider, signInWithPopup  } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js";
 import { getDatabase, set,ref } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
+
 const firebaseConfig = {
   apiKey: "AIzaSyByr7hbKqFg0Zl0TylGfojU1LLg3hKymPM",
   authDomain: "bhai-task.firebaseapp.com",
@@ -50,6 +49,11 @@ sign_up_submit.addEventListener('click',()=>{
       const user = userCredential.user;
       console.log(user)
       saveUserToDatabase(user.email,user.uid)
+      Swal.fire(
+        'Good job!',
+        'You clicked the button!',
+        'success'
+      )
       container.classList.remove("sign-up-mode");
     })
     .catch((error) => {
@@ -73,6 +77,11 @@ sign_in_submit.addEventListener('click',()=>{
   .then((userCredential) => {
     const user = userCredential.user;
     console.log(user.email)
+  Swal.fire(
+      'Good job!',
+      'You clicked the button!',
+      'success'
+    )
     window.location.href = 'welcome.html'
   })
   .catch((error) => {

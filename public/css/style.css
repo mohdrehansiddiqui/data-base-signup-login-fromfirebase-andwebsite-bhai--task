@@ -1,0 +1,74 @@
+h5.saleBtn {
+  background-color: orangered;
+  padding: 10px;
+  width: 20%;
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 80%;
+  
+}
+.offer i{
+  color: rgba(255, 68, 0, 0.507);
+}
+
+@media (max-width: 375px) {
+  .offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+  }
+}
+@media (max-width: 414px) {
+  .offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 390px) {
+  .offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 393px) {
+  .offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 360px) {
+  .offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 412px) {
+  .offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 280px) {
+  .offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+

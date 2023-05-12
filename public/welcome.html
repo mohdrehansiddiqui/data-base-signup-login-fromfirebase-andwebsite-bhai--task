@@ -4,53 +4,89 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./node_modules/sweetalert2/dist/sweetalert2.min.css">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="style2.css">
-  <title>Document</title>
+  <!-- <link rel="stylesheet" href="./style2.css"> -->
+  <link rel="stylesheet" href="swiper.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Responsive Website</title>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="./rehanTaskSrc-images/logo.png" alt="" srcset="">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-        aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#"><img src="./rehanTaskSrc-images/logo.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link ms-3" href="#">About Us</a>
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link ms-3" href="#">Pages</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ms-3" href="#">Shop</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ms-3" href="#">Account</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ms-3" href="#">Contact Us</a>
+            <a class="nav-link disabled">Disabled</a>
           </li>
         </ul>
-      </div>
-      <div class="nav-icons d-none d-sm-block 	d-sm-none d-md-block">
-        <i class="fa-sharp fa-solid fa-magnifying-glass navi"></i>
-        <i class="fa-solid fa-cart-shopping navi"></i>
-        <i class="fa-solid fa-user navi"></i>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
     </div>
   </nav>
   <br>
-  <div id="carouselExample" class="carousel slide">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- <div id="carouselExample" class="carousel slide">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="./rehanTaskSrc-images/slideshow1-1.jpg" class="d-block w-100" alt="error">
@@ -70,260 +106,344 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-  </div><br><br>
-  <div class="Arrivals-heading">
+  </div><br><br> -->
+  <div class="text-center">
     <h1>New Arrivals</h1>
     <p>The Best Online Sales To Shop This Weekend</p>
   </div>
-  <div class="card-group products-without-title">
-    <div class="card">
-      <img src="./rehanTaskSrc-images/222 (1).jpg" class="card-img-top" alt="error">
-      <div class="sale">
-        <h5 class="sale-h1">sale</h5>
+  <br>
+  <div class="card-group row">
+    <div class="col-lg-3 col-sm-12 border-0 px-2 mb-3">
+      <div class="card border-0">
+        <img src="./rehanTaskSrc-images/222 (1).jpg" class="card-img-top" alt="error">
+        <div class="card-img-overlay">
+          <h5 class="saleBtn float-end">sale</h5>
+        </div>
       </div>
     </div>
-    <div class="card">
-      <img src="./rehanTaskSrc-images/444.jpg" class="card-img-top" alt="error">
-    </div>
-    <div class="card">
-      <img src="./rehanTaskSrc-images/222.jpg" class="card-img-top" alt="error">
-      <div class="sale">
-        <h5 class="sale-h1">sale</h5>
+    <div class="col-lg-3 col-sm-12 border-0 px-2 mb-3">
+      <div class="card border-0">
+        <img src="./rehanTaskSrc-images/444.jpg" class="card-img-top" alt="error">
       </div>
     </div>
-    <div class="card">
-      <img src="./rehanTaskSrc-images/444.jpg" class="card-img-top" alt="error">
+    <div class="col-lg-3 col-sm-12 border-0 px-2 mb-3">
+      <div class="card border-0">
+        <img src="./rehanTaskSrc-images/222.jpg" class="card-img-top" alt="error">
+        <div class="card-img-overlay">
+          <h5 class="saleBtn float-end">sale</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-12 border-0 px-2 mb-3">
+      <div class="card border-0">
+        <img src="./rehanTaskSrc-images/444.jpg" class="card-img-top" alt="error">
+      </div>
+    </div>
+  </div><br>
 
-    </div>
-  </div><br><br><br><br><br><br><br><br><br>
-  <div class="card-group products-with-title">
-    <div class="card">
-      <img src="./rehanTaskSrc-images/222 (1).jpg" class="card-img-top" alt="error">
-      <div class="sale">
-        <h5 class="sale-h1">sale</h5>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Floral Kirby</h5>
-        <p class="card-text">$329.10</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="./rehanTaskSrc-images/444.jpg" class="card-img-top" alt="error">
-      <div class="card-body">
-        <h5 class="card-title">Floral Kirby</h5>
-        <p class="card-text">$329.10</p>
+  <div class="card-group row">
+    <div class="col-lg-3 col-sm-12 border-0 px-2 mb-3">
+      <div class="card border-0">
+        <img src="./rehanTaskSrc-images/222 (1).jpg" class="card-img-top" alt="error">
+        <div class="card-img-overlay p-0">
+          <h5 class="saleBtn float-end">sale</h5>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Floral Kirby</h5>
+          <p class="card-text text-center">$329.10</p>
+        </div>
       </div>
     </div>
-    <div class="card">
-      <img src="./rehanTaskSrc-images/222.jpg" class="card-img-top" alt="error">
-      <div class="sale">
-        <h5 class="sale-h1">sale</h5>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Floral Kirby</h5>
-        <p class="card-text">$329.10</p>
+    <div class="col-lg-3 col-sm-12 border-0 px-2 mb-3">
+      <div class="card border-0">
+        <img src="./rehanTaskSrc-images/444.jpg" class="card-img-top" alt="error">
+        <div class="card-body">
+          <h5 class="card-title text-center">Floral Kirby</h5>
+          <p class="card-text text-center">$329.10</p>
+        </div>
       </div>
     </div>
-    <div class="card">
-      <img src="./rehanTaskSrc-images/444.jpg" class="card-img-top" alt="error">
-      <div class="card-body">
-        <h5 class="card-title">Floral Kirby</h5>
-        <p class="card-text">$329.10</p>
+    <div class="col-lg-3 col-sm-12 border-0 px-2 mb-3">
+      <div class="card border-0">
+        <img src="./rehanTaskSrc-images/222.jpg" class="card-img-top" alt="error">
+        <div class="card-img-overlay p-0">
+          <h5 class="saleBtn float-end">sale</h5>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Floral Kirby</h5>
+          <p class="card-text text-center">$329.10</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-12 border-0 px-2 mb-3">
+      <div class="card border-0">
+        <img src="./rehanTaskSrc-images/444.jpg" class="card-img-top" alt="error">
+        <div class="card-body">
+          <h5 class="card-title text-center">Floral Kirby</h5>
+          <p class="card-text text-center">$329.10</p>
+        </div>
       </div>
     </div>
   </div>
-  <div class="card-group products-without-title">
-    <div class="card">
-      <img src="./rehanTaskSrc-images/222 (1).jpg" class="card-img-top" alt="error">
-      <div class="sale">
-        <h5 class="sale-h1">sale</h5>
+
+  <div class="card-group row">
+    <div class="col-lg-3 col-sm-12 border-0 px-2 mb-3">
+      <div class="card border-0">
+        <img src="./rehanTaskSrc-images/222 (1).jpg" class="card-img-top" alt="error">
+        <div class="card-img-overlay">
+          <h5 class="saleBtn float-end">sale</h5>
+        </div>
       </div>
     </div>
-    <div class="card">
-      <img src="./rehanTaskSrc-images/444.jpg" class="card-img-top" alt="error">
-    </div>
-    <div class="card">
-      <img src="./rehanTaskSrc-images/222.jpg" class="card-img-top" alt="error">
-      <div class="sale">
-        <h5 class="sale-h1">sale</h5>
+    <div class="col-lg-3 col-sm-12 border-0 px-2 mb-3">
+      <div class="card border-0">
+        <img src="./rehanTaskSrc-images/444.jpg" class="card-img-top" alt="error">
       </div>
     </div>
-    <div class="card">
-      <img src="./rehanTaskSrc-images/444.jpg" class="card-img-top" alt="error">
+    <div class="col-lg-3 col-sm-12 border-0 px-2 mb-3">
+      <div class="card border-0">
+        <img src="./rehanTaskSrc-images/222.jpg" class="card-img-top" alt="error">
+        <div class="card-img-overlay">
+          <h5 class="saleBtn float-end">sale</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-12 border-0 px-2 mb-3">
+      <div class="card border-0">
+        <img src="./rehanTaskSrc-images/444.jpg" class="card-img-top" alt="error">
+      </div>
     </div>
   </div><br>
 
-  <div class="grid-container list-girl">
-    <div class="grid-item">
-      <div class="card mb-3">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="./rehanTaskSrc-images/adsv.jpg" class="img-fluid rounded-start left-side-img" alt="error">
-          </div>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col float-start me-auto ms-auto w-auto">
+        <img src="./rehanTaskSrc-images/adsv.jpg" class="w-auto h-100 img-fluid rounded-start left-side-img" alt="error">
+      </div>
+      <div class="col float-start me-auto ms-auto w-auto">
+        <h5 class="card-title" align="left">Best Sellers</h5>
+        <hr class="hr-width w-25 ">
+        <img src="./rehanTaskSrc-images/222.jpg" class=" img-fluid rounded-start r-side-img w-25 " alt="error">
+        <div class="card-body">
+          <h5 class="card-title card-title-2 ">Keds KitStart pom pom</h5>
+          <p class="card-text card-text2">$42.99</p>
+        </div>
+        <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start r-side-img w-25" alt="error">
+        <div class="card-body">
+          <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
+          <p class="card-text card-text2">$42.99</p>
+        </div>
+        <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start r-side-img w-25 " alt="error">
+        <div class="card-body">
+          <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
+          <p class="card-text card-text2">$42.99</p>
+        </div>
+        <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start r-side-img w-25 " alt="error">
+        <div class="card-body">
+          <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
+          <p class="card-text card-text2">$42.99</p>
+        </div>
+      </div>
 
-        </div>
-      </div>
-    </div>
-    <div class="grid-item best-seller-list">
-      <div class="col-md-8 ms-5">
+      <div class="col float-start me-auto ms-auto w-auto">
+        <h5 class="card-title" align="left">Best Sellers</h5>
+        <hr class="hr-width w-25">
+        <img src="./rehanTaskSrc-images/222.jpg" class=" img-fluid rounded-start r-side-img w-25 " alt="error">
         <div class="card-body">
-          <div class="card mb-3 card-list">
-            <h5 class="card-title" align="left">Best Sellers</h5>
-            <hr class="hr-width">
-            
-            <div class="row g-0 ">
-              <div class="col-md-4">
-                <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start r-side-img" alt="error">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
-                  <p class="card-text card-text2">$42.99</p>
-                </div>
-              </div>
-            </div>
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start r-side-img" alt="error">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
-                  <p class="card-text card-text2">$42.99</p>
-                </div>
-              </div>
-            </div>
-            <div class="row g-0 d-none d-md-block">
-              <div class="col-md-4">
-                <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start r-side-img" alt="error">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
-                  <p class="card-text card-text2">$42.99</p>
-                </div>
-              </div>
-            </div>
-            <div class="row g-0 d-none d-md-block">
-              <div class="col-md-4">
-                <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start r-side-img" alt="error">
-              </div>
-              <div class="col-md-8 ">
-                <div class="card-body">
-                  <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
-                  <p class="card-text card-text2">$42.99</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <h5 class="card-title card-title-2 ">Keds KitStart pom pom</h5>
+          <p class="card-text card-text2">$42.99</p>
         </div>
-      </div>
-    </div>
-    <div class="grid-item newarrival-list ">
-      <div class="col-md-8 ms-5">
+        <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start r-side-img w-25" alt="error">
         <div class="card-body">
-          <div class="card mb-3 card-list2">
-            <h5 class="card-title" align="left">New Arrivals</h5>
-            <hr class="hr-width">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start" alt="error">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
-                  <p class="card-text card-text2">$42.99</p>
-                </div>
-              </div>
-            </div>
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start" alt="error">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
-                  <p class="card-text card-text2">$42.99</p>
-                </div>
-              </div>
-            </div>
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start" alt="error">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
-                  <p class="card-text card-text2">$42.99</p>
-                </div>
-              </div>
-            </div>
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start" alt="error">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
-                  <p class="card-text card-text2">$42.99</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
+          <p class="card-text card-text2">$42.99</p>
+        </div>
+        <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start r-side-img w-25 " alt="error">
+        <div class="card-body">
+          <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
+          <p class="card-text card-text2">$42.99</p>
+        </div>
+        <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start r-side-img w-25 " alt="error">
+        <div class="card-body">
+          <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
+          <p class="card-text card-text2">$42.99</p>
         </div>
       </div>
     </div>
   </div><br>
-  <div class="container text-center col-1">
+
+  <!-- <div class="grid-container">
+    <div class="row">
+      <div class="grid-item border-0 p-0">
+        <div class="col-md-8 ms-5">
+          <div class="card mb-3">
+            <div class="g-0">
+              <img src="./rehanTaskSrc-images/adsv.jpg" class="img-fluid rounded-start left-side-img" alt="error">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="col-md-8 ms-5">
+          <div class="card-body">
+            <div class="card mb-3 card-list">
+              <h5 class="card-title" align="left">Best Sellers</h5>
+              <hr class="hr-width">
+
+              <div class="col-md-4">
+                <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start r-side-img" alt="error">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
+                  <p class="card-text card-text2">$42.99</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start r-side-img" alt="error">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
+                  <p class="card-text card-text2">$42.99</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start r-side-img" alt="error">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
+                  <p class="card-text card-text2">$42.99</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start r-side-img" alt="error">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
+                  <p class="card-text card-text2">$42.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item newarrival-list ">
+        <div class="col-md-8 ms-5">
+          <div class="card-body">
+            <div class="card mb-3 card-list2">
+              <h5 class="card-title" align="left">New Arrivals</h5>
+              <hr class="hr-width">
+
+              <div class="col-md-4">
+                <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start" alt="error">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
+                  <p class="card-text card-text2">$42.99</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start" alt="error">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
+                  <p class="card-text card-text2">$42.99</p>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start" alt="error">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
+                  <p class="card-text card-text2">$42.99</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="./rehanTaskSrc-images/222.jpg" class="img-fluid rounded-start" alt="error">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title card-title-2">Keds KitStart pom pom</h5>
+                  <p class="card-text card-text2">$42.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br> -->
+  <div class="container text-center d-flex ms-auto me-auto ">
+    <div class="row offer ">
+    <div class="col-lg-2 col-md-12 col-sm-6 text-center w-25">
+      <button type="button" class="btn">
+        <i class="fa-sharp fa-solid fa-person-biking fa-xl"></i>
+      </button>
+      <button type="button" class="btn space-col1">
+        <h1 class="h1-freeship" align="left">Free Shipping</h1>
+        <p class="p-freeship ">on all order over $39.00</p>
+      </button>
+    </div>
+    <div class="col-lg-3 col-md-12 col-sm-6 text-center w-25">
+      <button type="button" class="btn">
+        <i class="fa-solid fa-wallet fa-xl"></i>
+      </button>
+      <button type="button" class="btn space-col1 col-xs-12">
+        <h1 class="h1-freeship" align="left">30 Days Return</h1>
+        <p class="p-freeship">Money Back Guarantee</p>
+      </button>
+    </div>
+    <div class="col-lg-2 col-md-12 col-xs-6 text-center w-25">
+      <button type="button" class="btn">
+        <i class="fa-solid fa-key fa-rotate-180 fa-xl"></i>
+      </button>
+      <button type="button" class="btn space-col1">
+        <h1 class="h1-freeship " align="left">Secure Checkout</h1>
+        <p class="p-freeship">100% protected by paypal</p>
+      </button>
+    </div>
+    <div class="col-lg-5 col-md-12 col-xs-6 text-center w-25">
+      <button type="button" class="btn">
+        <i class="fa-solid fa-clock fa-lg twenty4 d-none d-sm-block  "></i>
+      </button>
+      <button type="button" class="btn space-col1">
+        <h1 class="h1-freeship twenty4 d-none d-sm-block " align="left">24/7 Support</h1>
+        <p class="p-freeship pfreeship3 d-none d-sm-block ">All Time Customer Support</p>
+      </button>
+    </div>
+  </div>
+</div>
+  <!-- <div class="container text-center col-1">
     <div class="row">
       <div class="col col-lg-3  col-md-12 col-xs-12">
-        <button type="button" class="btn">
-          <i class="fa-sharp fa-solid fa-person-biking fa-xl"></i>
-        </button>
-        <button type="button" class="btn space-col1">
-          <h1 class="h1-freeship" align="left">Free Shipping</h1>
-          <p class="p-freeship ">on all order over $39.00</p>
-        </button>
+        
       </div>
       <div class="col col-lg-3  col-md-12 col-xs-12">
-        <button type="button" class="btn">
-          <i class="fa-solid fa-wallet fa-xl"></i>
-        </button>
-        <button type="button" class="btn space-col1 col-xs-12">
-          <h1 class="h1-freeship" align="left">30 Days Return</h1>
-          <p class="p-freeship">Money Back Guarantee</p>
-        </button>
+        
       </div>
       <div class="col col-lg-3  col-md-12 col-xs-12">
-        <button type="button" class="btn">
-          <i class="fa-solid fa-key fa-rotate-180 fa-xl"></i>
-        </button>
-        <button type="button" class="btn space-col1">
-          <h1 class="h1-freeship " align="left">Secure Checkout</h1>
-          <p class="p-freeship">100% protected by paypal</p>
-        </button>
+        
       </div>
       <div class="col col-lg-3 col-md-12 col-xs-12">
-        <button type="button" class="btn">
-          <i class="fa-solid fa-clock fa-lg twenty4 d-none d-sm-block"></i>
-        </button>
-        <button type="button" class="btn space-col1">
-          <h1 class="h1-freeship twenty4 d-none d-sm-block" align="left">24/7 Support</h1>
-          <p class="p-freeship pfreeship3 d-none d-sm-block">All Time Customer Support</p>
-        </button>
+       
       </div>
     </div>
-  </div><br>
-  <!-- Remove the container if you want to extend the Footer to full width. -->
-  <!-- Footer -->
+  </div><br> -->
   <footer class="text-center text-lg-start text-black" style="background-color: #f7f7f7"><br><br>
-    <!-- Grid container -->
+
     <div class="container p-4 pb-0">
-      <!-- Section: Links -->
+
       <section class="">
-        <!--Grid row-->
+
         <div class="row">
-          <!--Grid column-->
+
           <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
             <img src="./rehanTaskSrc-images/logo.png" alt=""><br><br>
 
@@ -334,9 +454,7 @@
               Reiciendis assumenda iusto sapiente inventore animi?
             </p>
           </div>
-          <!--Grid column-->
 
-          <!--Grid column-->
           <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
             <h5 class="text-uppercase">Category</h5>
 
@@ -358,9 +476,7 @@
               </li>
             </ul>
           </div>
-          <!--Grid column-->
 
-          <!--Grid column-->
           <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
             <h5 class="text-uppercase">Useful Link</h5>
 
@@ -382,9 +498,7 @@
               </li>
             </ul>
           </div>
-          <!--Grid column-->
 
-          <!--Grid column-->
           <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
             <h5 class="text-uppercase">Opening Hours</h5>
 
@@ -422,7 +536,7 @@
       <div class="container text-center">
         <div class="row">
           <div class="col">
-            <button type="button" class="btn ">
+            <button type="button" class="btn">
               <div class="text-left p-3 copyrght">
                 © 2020 Copyright Made By <i class="rehan">Rehan</i></div>
             </button>
@@ -439,7 +553,10 @@
     </div>
   </footer>
 
-
-    <script src=" ./bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+<script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+<script src="./node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>
